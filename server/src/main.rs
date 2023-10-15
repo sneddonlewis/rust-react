@@ -24,7 +24,7 @@ async fn main() {
         .route("/people", routing::get(get_people))
         .layer(cors);
 
-    let addr = SocketAddr::from(([127, 0, 0, 1], 3000));
+    let addr = SocketAddr::from(([127, 0, 0, 1], 4000));
 
     axum::Server::bind(&addr)
         .serve(app.into_make_service())
@@ -37,6 +37,7 @@ async fn index() -> &'static str {
 }
 
 async fn get_people() -> impl IntoResponse {
+    println!("People endpoint called");
     let people = vec![
         Person{
             name: String::from("Zachary"),
