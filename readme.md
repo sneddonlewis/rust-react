@@ -1,16 +1,13 @@
 # My Web App
 
-Generate TypeScript type definitions
-Need to now tune this command. Run it from server dir
+Generate TypeScript type definitions.  
+From `./server`
 ```
 tsync -i ./src -o ../client/src/types.d.ts
 ```
 ## TODOs
 
 - Move gitignores to repo level
-- Remove old client (inside server)
-- connect new client to server
-- adjust `tsync` command call
 
 ## Roadmap
 
