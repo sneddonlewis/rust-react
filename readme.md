@@ -5,6 +5,25 @@ From `./server`
 ```
 tsync -i ./src -o ../client/src/types.d.ts
 ```
+## Dev
+
+### Requirements
+- Rust
+- Node
+- Yarn
+
+To run the backend and the frontend concurrently, run the command from the `./client` directory:
+```
+yarn dev:fs
+```
+On termination both processes should be stopped. Otherwise it's kill -9 no more CPU time 😉
+```
+kill -9 $(lsof -t -i :4000)
+```
+```
+kill -9 $(lsof -t -i :5173)
+```
+
 ## TODOs
 
 - Move gitignores to repo level
