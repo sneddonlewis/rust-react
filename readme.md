@@ -1,5 +1,5 @@
 # My Web App
-[![CI](https://github.com/sneddonlewis/rust-react/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/sneddonlewis/rust-react/actions/workflows/ci.yml)
+[![Build](https://github.com/sneddonlewis/rust-react/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/sneddonlewis/rust-react/actions/workflows/ci.yml)
 
 Generate TypeScript type definitions.  
 From `./server`
